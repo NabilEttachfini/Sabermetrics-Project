@@ -9,7 +9,7 @@ Fangraphs data is used for this project as well as Lehman data.
 _________________________________________________________________
 		 	 	 		
 								
-# 1.1 Explanation of statistic #
+##  1.1 Explanation of statistic ##
 				
 As a reminder for my statistic, I decided to calculate when teams begin to lose money on players based off of the contracts they have signed. For my statistic, I evaluated five batters using five important batting statistics SLG, AVG, OBP, and WOBA, I also included WAR to my calculations as overall value for these players. When deciding how to approach this I needed a way to first justify the salary of these players and then determine if as the years went on the players no longer met the justification for these salaries, meaning they no longer played well. So to do this I needed to come up with a point algorithm. So the first thing I did to help visualize where players fall in line with other players is make box and whisker plots and compare players averages to the rest of the league. After getting the plots I then made my point algorithm where each statistic had a weight attached to it where if they scored an average amount of points then they got one point and the points scaled appropriately when the player scored above or below average. When doing this I made WAR have more weight than the other statistics as it serves more overall value for the players. After this was done the points were applied to my five pitchers through several years, starting with the first year they signed their contracts. 
 
@@ -24,7 +24,7 @@ For this statistic I decided to focus on the 38.2% line (this level is often use
 This statistic is combining multiple stats into one and also considering players worth, which is not being fulfilled by other statistics. It is also providing a unique evaluation method that other MLB stats are not using. 
 		 	 	 					
 				
-# 1.2 Demonstration #
+## 1.2 Demonstration ##
 
 
 Check the python notebook in the repo to view the statistic and how it works! All graphs are displayed there. 	
@@ -33,19 +33,19 @@ When evaluating the statistic make sure to read the graphs and find when players
 
 If you wanted to test this stat with different players you could change the names of the players when loading in the data :) 
 
-# 1.3 Evaluation of statistic #
+## 1.3 Evaluation of statistic ##
 				
 			
 My statistic compares to other statistics as it takes into consideration players averages and helps teams evaluate players worth kind of like WAR does. When we talk about WAR we have to keep in mind that it is also representing some replacement level if a player reaches 0.0, they are then as valued as someone from the minors, in a way that is what my statistic is doing if a player dips below the 38.2% line. It does differ from such things like WAR as it evaluates players through time and determines their worth through performance. It also has a replacement level that compares the players performance with their very own performance, so teams can measure that individuals performance rather than just comparing to the rest of the league, which is also taking into consideration when calculating the points.
 
 
 
-# Possible concerns with my statistic #
+## Possible concerns with my statistic ##
 
 Some concerns with my statistic are the point ranking and the weight system behind it. I feel that if I knew more about baseball and what all these statistics meant for specefic teams the point system could be very accurate, and mine is more general for all teams. I have an understanding of what these statistics are and what they represent, but baseball professionals could find true value in the point rankings. Meaning teams could determine what statistics matter most for them and then weigh things according to that. I also would say the Fibonacci Retracement could be an issue for some MLB teams, as it is not that traditional in sports. I liked using it as it was something unique, new, and nerdy but some folks on an MLB team may not think there is value in it. 
 
 
-# 1.4 Presentation# 
+## 1.4 Presentation ## 
 
 Check video in repo!
 
